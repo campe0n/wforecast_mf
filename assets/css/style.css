@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 5%;
+    background-image: linear-gradient(to right, #3B6DC3 , #230555);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 1%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+aside {
+    box-sizing: border-box;
+    width: 25%;
+    float:left;
+    height: 100%;
+}
+
+input {
+    width: 90%;
+    margin: 2%;
+}
+
+button {
+    margin: 2%;
+    width: 94%;
+    background-color: #5AA2E9;
+    color: white;
+}
+
+main {
+    order: 2;
+    float: center;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    margin-top: 1%;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.city {
+    border-style: solid;
+    width: 100%;
+    height: 20%;
+}
+
+.fiveday {
+    width: 100%;
+    height: 50%;
+}
