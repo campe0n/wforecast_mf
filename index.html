@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
+    <script src="https://unpkg.com/dayjs@1.10.4/plugin/weekOfYear.js"></script>
 </head>
 <body>
     <header>
@@ -22,10 +26,10 @@
             <div id="btnsContainer"></div>
         </aside>
         <section>
-            <div class="city">
+            <div id="city">
                 <p></p>
             </div>
-            <div class="fiveday">
+            <div id="fiveday">
                 <p>5-Day Forecast:</p>
             </div>
         </section>
