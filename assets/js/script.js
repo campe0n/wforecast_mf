@@ -1,4 +1,5 @@
 var cities = [];
+var savedCities = {};
 
 function getApi() {
     var requestUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=38.883530&lon=-94.818237&exclude=hourly&appid=e347bd23cef3f3c3bd38b8b8011703ff'
@@ -34,9 +35,14 @@ function createButtons(){
     button.appendChild(text);
     document.querySelector('#btnsContainer').appendChild(button);
     button.setAttribute('style', 'text-align: center; margin: 2% 0 2% 2%; width: 94%; height; 20%; background-color: #B7B7B7; color: black;');
-    }
+}
+saveSearch();
 }
 
-function init(){
-
+function saveSearch(){
+    cities.forEach((item, i) => {
+        item.id = i + 1;
+        localStorage.setItem(item, i);
+        console.log(savedCities);
+    })
 }
