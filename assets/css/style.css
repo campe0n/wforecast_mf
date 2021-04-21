@@ -1,3 +1,14 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -8,38 +19,50 @@ header {
     background-image: linear-gradient(to right, #3B6DC3 , #230555);
 }
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-}
-
 h1 {
     padding: 0;
     margin: 0;
     color: white;
 }
 
-h2 {
-    margin-bottom: 1%;
-    font-size: 100%;
+#s4city {
+    margin: 0%;
+    padding-left: 2%;
+    font-size: 24px;
     font-weight: bold;
 }
 
-aside {
-    box-sizing: border-box;
-    width: 25%;
-    float:left;
+main {
+    width: 100%;
+    height: 90%;
+}
+
+#left {
+    float: left;
+    margin: 0;
+    padding:0;
+    width: 30%;
     height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#right {
+    float: right;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #form{
     width: 100%;
-    height: 10%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start ;
 }
 
 input {
@@ -48,9 +71,9 @@ input {
 }
 
 #searchBtn {
-    margin: 2%;
-    margin-bottom: 5%;
+    margin: 0;
     width: 94%;
+    margin-left: 2%;
     background-color: #5AA2E9;
     color: white;
     border-bottom: 2px solid #989898;
@@ -58,32 +81,21 @@ input {
 
 #btnsContainer {
     width: 100%;
-    height: 75%;
-    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-main {
-    order: 2;
-    float: center;
-    width: 100%;
-    height: 100%;
-}
-
-section {
-    margin-top: 1%;
-    float: left;
-    margin-left: 2%;
-    width: 70%;
-    height: 100%;
-}
-
-.city {
+#city {
+    margin: 1%;
     border-style: solid;
-    width: 100%;
+    width: 95%;
     height: 20%;
 }
 
-.fiveday {
+#fiveday {
     width: 100%;
     height: 50%;
 }

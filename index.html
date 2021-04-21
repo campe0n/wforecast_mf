@@ -8,24 +8,23 @@
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <script src="assets/js/script.js" defer></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-    <script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
-    <script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
-    <script src="https://unpkg.com/dayjs@1.10.4/plugin/weekOfYear.js"></script>
+    <script>dayjs().format()</script>
 </head>
 <body>
     <header>
         <h1>Weather Forecast</h1>
     </header>
+
     <main>
-        <aside class="search">
+        <section id="left">
             <div id ="form">
-                <h2>Search for a City:</h2>
+                <h2 id="s4city">Search for a City:</h2>
                 <input type="text" placeholder="Olathe"></input>
                 <button id="searchBtn" onclick="formSubmitHandler()">Search</button>
             </div>  
             <div id="btnsContainer"></div>
-        </aside>
-        <section>
+        </section>
+        <section id="right">
             <div id="city">
                 <p></p>
             </div>
