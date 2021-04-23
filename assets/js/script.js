@@ -5,6 +5,7 @@ var search = document.querySelector('input').value.trim();
 console.log(day);
 function getApi() {
     var requestUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=38.883530&lon=-94.818237&units=imperial&appid=35f55e88a2361c526b9d9dfd2f2e3074'
+    //var requestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + search +'&appid=35f55e88a2361c526b9d9dfd2f2e3074'
 
     fetch(requestUrl)
     .then(function(response) {
@@ -15,8 +16,7 @@ function getApi() {
         document.getElementById('temp').innerHTML = "Temp: "+ data.current.temp+"F";
         document.getElementById('wind').innerHTML = "Wind  "+data.current.wind_speed+" MPH";
         document.getElementById('humidity').innerHTML = "Humidity:  "+data.current.humidity+" %";
-        document.getElementById('uvi').innerHTML = "UV Index:  "+data.current.uvi;
-        
+        document.getElementById('uvi').innerHTML = "UV Index:  "+data.current.uvi;   
     })
 }
 
