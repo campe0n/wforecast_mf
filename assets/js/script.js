@@ -3,7 +3,8 @@ var savedCities = localStorage.getItem("cities");
 var day = dayjs().format('(D/MM/YY)');
 var search = document.querySelector('input').value.trim();
 console.log(day);
-function getApi() {
+
+function onelocation() {
     var search = document.querySelector('input').value.trim();
     var requestUrl = 'https://api.openweathermap.org/data/2.5/weather?units=imperial&q=' + search +'&appid=35f55e88a2361c526b9d9dfd2f2e3074'
 
@@ -21,7 +22,6 @@ function getApi() {
 
 function get5day(){
     var search = document.querySelector('input').value.trim();
-    //var requestUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=38.883530&lon=-94.818237&units=imperial&appid=35f55e88a2361c526b9d9dfd2f2e3074'
     var requestUrl = 'https://api.openweathermap.org/data/2.5/forecast?q='+search+'&units=imperial&appid=35f55e88a2361c526b9d9dfd2f2e3074'
 
     fetch(requestUrl)
@@ -81,7 +81,7 @@ function formSubmitHandler() {
         console.log(cities);
         document.querySelector('h3').innerHTML = search + '        ' + day;
         createButtons();
-        getApi();
+        onelocation();
         get5day();
     }
 }
