@@ -17,6 +17,41 @@ function getApi() {
         document.getElementById('wind').innerHTML = "Wind  "+data.current.wind_speed+" MPH";
         document.getElementById('humidity').innerHTML = "Humidity:  "+data.current.humidity+" %";
         document.getElementById('uvi').innerHTML = "UV Index:  "+data.current.uvi;   
+
+        document.getElementById('t1').innerHTML = "Temp: "+ JSON.stringify(data.daily[0].temp.day);
+        document.getElementById('t1').setAttribute('style', 'color:white;');
+        document.getElementById('w1').innerHTML = "Wind: "+ JSON.stringify(data.daily[0].wind_speed);
+        document.getElementById('w1').setAttribute('style', 'color:white');
+        document.getElementById('h1').innerHTML = "Humidity: "+JSON.stringify(data.daily[0].humidity);
+        document.getElementById('h1').setAttribute('style', 'color: white');
+
+        document.getElementById('t2').innerHTML = "Temp: "+ JSON.stringify(data.daily[1].temp.day);
+        document.getElementById('t2').setAttribute('style', 'color:white;');
+        document.getElementById('w2').innerHTML = "Wind: "+ JSON.stringify(data.daily[1].wind_speed);
+        document.getElementById('w2').setAttribute('style', 'color:white');
+        document.getElementById('h2').innerHTML = "Humidity: "+JSON.stringify(data.daily[1].humidity);
+        document.getElementById('h2').setAttribute('style', 'color: white');
+
+        document.getElementById('t3').innerHTML = "Temp: "+ JSON.stringify(data.daily[2].temp.day);
+        document.getElementById('t3').setAttribute('style', 'color:white;');
+        document.getElementById('w3').innerHTML = "Wind: "+ JSON.stringify(data.daily[2].wind_speed);
+        document.getElementById('w3').setAttribute('style', 'color:white');
+        document.getElementById('h3').innerHTML = "Humidity: "+JSON.stringify(data.daily[2].humidity);
+        document.getElementById('h3').setAttribute('style', 'color: white');
+
+        document.getElementById('t4').innerHTML = "Temp: "+ JSON.stringify(data.daily[3].temp.day);
+        document.getElementById('t4').setAttribute('style', 'color:white;');
+        document.getElementById('w4').innerHTML = "Wind: "+ JSON.stringify(data.daily[3].wind_speed);
+        document.getElementById('w4').setAttribute('style', 'color:white');
+        document.getElementById('h4').innerHTML = "Humidity: "+JSON.stringify(data.daily[3].humidity);
+        document.getElementById('h4').setAttribute('style', 'color: white');
+
+        document.getElementById('t5').innerHTML = "Temp: "+ JSON.stringify(data.daily[4].temp.day);
+        document.getElementById('t5').setAttribute('style', 'color:white;');
+        document.getElementById('w5').innerHTML = "Wind: "+ JSON.stringify(data.daily[4].wind_speed);
+        document.getElementById('w5').setAttribute('style', 'color:white');
+        document.getElementById('h5').innerHTML = "Humidity: "+JSON.stringify(data.daily[4].humidity);
+        document.getElementById('h5').setAttribute('style', 'color: white');
     })
 }
 
